@@ -60,6 +60,11 @@ public class CharControl : MonoBehaviour
                     Quaternion targetRotation = Quaternion.LookRotation(destinationPosition - transform.position);
                     myTransform.rotation = targetRotation;
                 }
+
+                if (hit.transform.tag == "Enemy")
+                {
+                    hit.transform.GetComponent<AICharacterControl>().target = myTransform;
+                }
        
             }
         }

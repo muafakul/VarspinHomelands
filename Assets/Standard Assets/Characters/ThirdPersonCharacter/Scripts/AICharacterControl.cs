@@ -30,8 +30,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (agent.remainingDistance > agent.stoppingDistance)
                 character.Move(agent.desiredVelocity, false, false);
-            else
+            else {
+                Debug.Log("AI Target Reset");
                 character.Move(Vector3.zero, false, false);
+                target = null;
+            }
         }
 
 
