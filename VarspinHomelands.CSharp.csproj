@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CharStats.cs" />
     <Compile Include="Assets\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Scripts\OrthoSmoothFollow.cs" />
+    <Compile Include="Assets\Scripts\characterTextBox.cs" />
     <Compile Include="Assets\Textures\Water (Basic)\Scripts\WaterBasic.cs" />
   </ItemGroup>
   <ItemGroup>
